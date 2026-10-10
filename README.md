@@ -61,3 +61,11 @@ For production use:
 - CoinGecko API key
 - Telegram Bot Token
 - OpenAI API key (for Claude integration) 
+## Tests
+
+```bash
+pip install -r requirements-test.txt
+pytest tests
+```
+
+27 tests cover the free-LLM rotation in `free_llm.py` with in-memory fake providers: rotating past empty replies, leaked reasoning and broken JSON; classifying errors correctly (a bad key disables a provider, a VPN 403 or a rate limit only cools it, a zero-quota plan disables it); shedding JSON mode on a 400; and never reporting an untested key as "ready". Every protection was verified by a deliberate mutation the suite catches (7/7). External network access is blocked during tests.
