@@ -1,5 +1,7 @@
 # Solana Telegram Scanner
 
+[![CI](https://github.com/lowriskbtc/solana-scanner/actions/workflows/ci.yml/badge.svg)](https://github.com/lowriskbtc/solana-scanner/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12%20%7C%203.13-3776AB?logo=python&logoColor=white) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 An AI-powered Solana token scanner that provides real-time token information and beautiful visualizations via Telegram.
 
 ## Setup Instructions
