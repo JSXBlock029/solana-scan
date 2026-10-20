@@ -8,7 +8,7 @@ solana>=0.27.0
 solders>=0.8.0
 ta>=0.10.0
 
-aiohttp==3.8.5
+aiohttp==3.14.4
 certifi==2023.7.22
 python-dotenv==1.0.0
 requests==2.31.0
